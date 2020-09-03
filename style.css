@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:wght@400;700&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cormorant Garamond', serif;
+    --main-color: #000A1A;
+    --gray: #636363;
+    --cta: #b91d1d;
+    --lifecolor: #003788;
+    --whatsapp: #41d32a;
+    --buttonbg: #dceaff;
+}
+
+h1,
+h2 {
+    font-family: 'Bangers', cursive;
+}
+
+
+/*Start Header*/
+
+.header {
+    background-image: url('assets/bannervert.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+}
+
+.banner-text {
+    width: 50%;
+    padding: 10px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+.banner-text h1 {
+    font-size: 5em;
+    text-shadow: #E6E6E6 3px 3px;
+}
+
+.banner-text h3 {
+    background-color: #fefbf0c2;
+}
+
+.shop-button {
+    display: block;
+    color: var(--lifecolor);
+    font-weight: bold;
+    margin: 40px auto;
+    width: 50%;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: var(--buttonbg);
+    border-radius: 10px;
+}
+
+.shop-button:hover {
+    background-color: var(--lifecolor);
+    color: white;
+}
+
+.header-shop {
+    position: absolute;
+    width: 50%;
+    bottom: 10%;
+    left: 25%;
+}
+
+.header-shop .shop-button {
+    margin: 0;
+    width: 100%;
+    padding: 5px 0;
+    background-color: var(--cta);
+    color: white;
+}
+
+
+/*End Header
+
+
+Start Info cards*/
+
+.info {
+    margin: 40px auto;
+}
+
+.card {
+    padding: 10px;
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card-text {
+    margin: 2%;
+    padding: 10px;
+    background-color: rgba(5, 53, 61, 0.45);
+}
+
+.card-1 {
+    background-image: url('assets/science1.png');
+}
+
+.card-2 {
+    background-image: url('assets/science2.png');
+}
+
+.card-3 {
+    background-image: url('assets/science3.png');
+}
+
+.card-4 {
+    background-image: url('assets/science4.png');
+}
+
+
+/* End Info cards
+
+Start Products*/
+
+.payu-small {
+    max-width: 100%;
+}
+
+.payu-big {
+    display: none;
+}
+
+.products {
+    border: solid 1px var(--lifecolor);
+    padding: 10px;
+    margin: 40px 5px;
+    text-align: center;
+}
+
+.products h2 {
+    background-color: var(--lifecolor);
+    padding: 10px;
+    color: white;
+}
+
+.product-card {
+    border: solid 1px var(--gray);
+    margin-bottom: 30px;
+    position: relative;
+    padding: 2%;
+}
+
+.product-card img {
+    max-width: 100%;
+}
+
+.product-card .sale {
+    background-color: white;
+    color: var(--cta);
+    padding: 10px;
+    width: 40%;
+    margin: 0 auto;
+    border: solid 2px var(--cta);
+    border-radius: 5px;
+}
+
+.product-card .product-title {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.product-card .price {
+    color: var(--cta);
+    font-size: 2em;
+    margin: 10px;
+}
+
+.product-card .price .price-tag {
+    text-decoration: line-through;
+}
+
+.product-card .sale-price {
+    font-size: 1.5em;
+    margin: 10px;
+}
+
+.product-card .product-description {
+    margin-bottom: 70px;
+}
+
+.product-card .shop-button {
+    position: absolute;
+    margin: 0;
+    bottom: 5%;
+    left: 20%;
+}
+
+.other {
+    height: 380px;
+}
+
+.buy-button {
+    display: block;
+    width: 50%;
+    margin: 40px auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+    background-color: var(--lifecolor);
+    border-radius: 10px;
+}
+
+.contact-button {
+    display: block;
+    width: 70%;
+    margin: 40px auto;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px 5px 35px;
+    background-color: var(--whatsapp);
+    border-radius: 10px;
+}
+
+.contact-button img {
+    width: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
+}
+
+.contact-button p {
+    display: inline-block;
+    margin: auto;
+}
+
+
+/* End Products
+
+Start Join Information*/
+
+.join {
+    background-image: url('assets/Beneficios.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 40px auto;
+}
+
+.join h3 {
+    text-align: center;
+    font-family: 'Bangers', cursive;
+    font-size: 2em;
+}
+
+.join-text {
+    padding: 10px;
+    text-align: justify;
+    background-color: rgba(230, 235, 242, .5);
+    width: 80%;
+    margin: 0 auto;
+}
+
+.join li {
+    margin-top: 20px;
+}
+
+
+/* End Join Information
+
+Start Close*/
+
+.close {
+    padding: 10px;
+    text-align: justify;
+    margin: 20px 5px;
+    border: solid 1px var(--lifecolor);
+    background-image: url('assets/family.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.close h4 {
+    background-color: rgba(230, 235, 242, .5);
+    padding: 10px;
+}
+
+.close img {
+    max-width: 100%;
+}
+
+
+/* End Close
+
+Start Footer*/
+
+footer {
+    text-align: center;
+    margin: 50px 5px 10px 5px;
+    border: solid 1px var(--lifecolor);
+    background-color: rgba(0, 0, 0);
+    color: white;
+}
+
+footer img {
+    max-width: 100%;
+}
+
+footer h3 {
+    font-weight: bold;
+    font-size: 3em;
+    margin: 10px;
+}
+
+footer h4 {
+    margin: 10px auto;
+    font-size: 1.5em;
+}
+
+.footer-button {
+    margin: 10px auto;
+    padding: 20px 10px;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: red;
+}
+
+.mail .buy-button {
+    width: 70%;
+}
+
+footer small {
+    font-weight: bold;
+    padding: 1%;
+}
+
+
+/* End Footer
+
+Whatsapp Icon*/
+
+.whatsapp {
+    position: fixed;
+    bottom: 0px;
+    right: 10px;
+    z-index: 100;
+    display: inline-block;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.whatsapp img {
+    width: 50px;
+    vertical-align: middle;
+}
+
+.whatsapp p {
+    display: none;
+    color: var(--main-color);
+}
+
+.whatsapp-laptop {
+    display: none;
+}
+
+
+/* End Whatsapp Icon
+
+Start Tablet view */
+
+@media screen and (min-width: 767px) {
+    .main-container {
+        margin: 0 10px;
+    }
+    .info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        justify-content: space-between;
+    }
+    .card {
+        display: flex;
+        align-items: center;
+    }
+    .card-1 {
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .card-2 {
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    .card-3 {
+        grid-column: 1/2;
+        grid-row: 2/3;
+    }
+    .card-4 {
+        grid-column: 2/3;
+        grid-row: 2/3;
+    }
+    .payu-small {
+        display: none;
+    }
+    .payu-big {
+        display: block;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    .product-promotion,
+    .product-transfer,
+    .product-targeted,
+    .product-wellness,
+    .product-transform,
+    .product-nutrition {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+    .logo-association {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+/* End Tablet View
+
+Start Laptop View*/
+
+@media screen and (min-width: 1023px) {
+    .header {
+        background-image: url('assets/banner1.png');
+        position: relative;
+    }
+    .banner-text {
+        position: absolute;
+        left: 40%;
+    }
+    .banner-text h1 {
+        font-size: 8em;
+        margin: 10px auto;
+    }
+    .banner-text h2 {
+        font-size: 4em;
+        margin: 20px auto;
+    }
+    header .shop-button {
+        position: absolute;
+        bottom: 10%;
+    }
+    .main-container {
+        margin: 0 3%;
+    }
+    .product-promotion,
+    .product-transfer,
+    .product-targeted,
+    .product-wellness {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .join {
+        background-image: url('assets/beneficios-large.png');
+    }
+    .close {
+        background-image: url('assets/family-big.png');
+    }
+    .contact-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+    }
+    .whatsapp {
+        background-color: var(--whatsapp);
+        padding: 5px 15px;
+    }
+    .whatsapp p {
+        display: inline-block;
+    }
+    .whatsapp-mobile {
+        display: none;
+    }
+    .whatsapp-laptop {
+        display: inline-block;
+    }
+}
