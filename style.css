@@ -411,14 +411,28 @@ Start Tablet view */
     .product-targeted,
     .product-wellness,
     .product-transform,
-    .product-nutrition {
+    .product-nutrition,
+    .other-product {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
+    .other {
+        height: 400px;
+    }
+    .close h4 {
+        font-size: 1.5em;
+        margin: 70px;
+    }
+    .join {
+        font-size: 2em;
+    }
     .logo-association {
         display: flex;
         justify-content: center;
+    }
+    footer {
+        font-size: 2em;
     }
 }
 
@@ -454,8 +468,12 @@ Start Laptop View*/
     .product-promotion,
     .product-transfer,
     .product-targeted,
-    .product-wellness {
+    .product-wellness,
+    .other-product {
         grid-template-columns: repeat(3, 1fr);
+    }
+    .other {
+        height: 500px;
     }
     .join {
         background-image: url('assets/beneficios-large.png');
@@ -467,6 +485,11 @@ Start Laptop View*/
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
+        gap: 10px;
+    }
+    .close h4 {
+        font-size: 1.5em;
+        margin: 120px;
     }
     .whatsapp {
         background-color: var(--whatsapp);
