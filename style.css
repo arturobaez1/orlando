@@ -197,7 +197,7 @@ Start Products*/
 }
 
 .other {
-    height: 380px;
+    height: 500px;
 }
 
 .buy-button {
@@ -381,6 +381,7 @@ Start Tablet view */
     .card {
         display: flex;
         align-items: center;
+        font-size: 1.2em;
     }
     .card-1 {
         grid-column: 1/2;
@@ -417,8 +418,8 @@ Start Tablet view */
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    .other {
-        height: 400px;
+    .product-description {
+        font-size: 1.3em;
     }
     .close h4 {
         font-size: 1.5em;
