@@ -8,7 +8,141 @@
     <title>4Life</title>
     <link rel="icon" href="assets/4life-logo.svg">
     <style>
-
+        @import url('https://fonts.googleapis.com/css2?family=Bangers&family=Cormorant+Garamond:wght@400;700&display=swap');
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Cormorant Garamond', serif;
+            --main-color: #000A1A;
+            --gray: #636363;
+            --cta: #b91d1d;
+            --lifecolor: #003788;
+            --whatsapp: #41d32a;
+            --buttonbg: #dceaff
+        }
+        
+        h1 {
+            font-family: 'Bangers', cursive
+        }
+        
+        .header {
+            background-image: url('assets/bannervert.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+            max-width: 100vw;
+            position: relative
+        }
+        
+        .banner-text {
+            width: 50%;
+            padding: 10px;
+            color: var(--main-color);
+            text-align: center
+        }
+        
+        .banner-text h1 {
+            font-size: 5em;
+            text-shadow: #E6E6E6 3px 3px
+        }
+        
+        .banner-text h3 {
+            background-color: #fefbf0c2
+        }
+        
+        .shop-button {
+            display: block;
+            color: var(--lifecolor);
+            font-weight: bold;
+            margin: 40px auto;
+            width: 50%;
+            text-decoration: none;
+            text-align: center;
+            padding: 5px 20px;
+            background-color: var(--buttonbg);
+            border-radius: 10px
+        }
+        
+        .header-shop {
+            position: absolute;
+            width: 50%;
+            bottom: 10%;
+            left: 25%
+        }
+        
+        .header-shop .shop-button {
+            margin: 0;
+            width: 100%;
+            padding: 5px 0;
+            background-color: var(--cta);
+            color: white
+        }
+        
+        .payu-small {
+            max-width: 100%
+        }
+        
+        .whatsapp {
+            position: fixed;
+            bottom: 0px;
+            right: 10px;
+            z-index: 100;
+            display: inline-block;
+            text-align: center;
+            border-radius: 10px
+        }
+        
+        .whatsapp img {
+            width: 50px;
+            vertical-align: middle
+        }
+        
+        .whatsapp p {
+            display: none;
+            color: var(--main-color)
+        }
+        
+        .whatsapp-laptop {
+            display: none
+        }
+        
+        @media screen and (min-width:767px) {
+            .payu-small {
+                display: none
+            }
+        }
+        
+        @media screen and (min-width:1023px) {
+            .header {
+                background-image: url('assets/banner1.png');
+                position: relative
+            }
+            .banner-text {
+                position: absolute;
+                left: 40%
+            }
+            .banner-text h1 {
+                font-size: 8em;
+                margin: 10px auto
+            }
+            header .shop-button {
+                position: absolute;
+                bottom: 10%
+            }
+            .whatsapp {
+                background-color: var(--whatsapp);
+                padding: 5px 15px
+            }
+            .whatsapp p {
+                display: inline-block
+            }
+            .whatsapp-mobile {
+                display: none
+            }
+            .whatsapp-laptop {
+                display: inline-block
+            }
+        }
     </style>
 
     <!--  Inicio del Script de Analytics Global site tag (gtag.js) - Google Analytics -->
